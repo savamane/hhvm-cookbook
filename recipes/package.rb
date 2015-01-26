@@ -2,7 +2,7 @@ case node[:platform]
   when 'debian', 'ubuntu'
     include_recipe 'hhvm::_package_debian'
 
-  when 'rhel', 'centos'
+  when 'rhel', 'centos', 'scientific'
     include_recipe 'hhvm::_package_rhel'
 
   else
